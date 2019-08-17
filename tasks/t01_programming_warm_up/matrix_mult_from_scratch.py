@@ -19,7 +19,7 @@ def matrix_dot_matrix(x, y):
         for i in range(n):
             c.append([])
             for j in range(p):
-                c[i].append(sum(x[i][r]*y[r][j] for r in range(m)))
+                c[i].append(sum(x[i][k]*y[k][j] for k in range(m)))
         return c
     except Exception as e:
         print(e)
